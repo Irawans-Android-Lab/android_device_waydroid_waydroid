@@ -19,6 +19,8 @@ ifneq ("$(wildcard vendor/lineage/*)","")
     VENDOR_NAME := lineage
 else ifneq ("$(wildcard vendor/bliss/*)","")
     VENDOR_NAME := bliss
+else ifneq ("$(wildcard vendor/nusantara/*)","")
+    VENDOR_NAME := nad
 endif
 
 PRODUCT_MAKEFILES := \
